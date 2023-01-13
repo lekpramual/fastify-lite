@@ -54,7 +54,7 @@ app.register(require("./plugins/db"), {
   },
 });
 
-// JWT
+// JWT Witd core api expires in 1 day
 app.register(require("./plugins/jwt"), {
   secret: process.env.SECRET_KEY || "@1234567890@",
   sign: {
