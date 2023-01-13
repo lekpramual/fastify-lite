@@ -1,14 +1,12 @@
-import { Knex } from 'knex'
+import { Knex } from "knex";
 
 export class LoginModel {
-
-  constructor () { }
+  constructor() {}
 
   login(db: Knex, username: any, password: any) {
-    return db('users')
-      .select('id', 'first_name', 'last_name')
-      .where('username', username)
-      .where('password', password)
+    return db("users")
+      .select("id", "first_name", "last_name")
+      .where("username", username)
+      .where("password", password);
   }
-
 }
